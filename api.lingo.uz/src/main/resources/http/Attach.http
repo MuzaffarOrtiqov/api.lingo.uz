@@ -1,0 +1,12 @@
+### Upload
+POST localhost:8080/api/v1/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMTMzMjM5LCJleHAiOjE3NTI3MzgwMzl9.-CA96TVLTHABJEaO3Ux14niYbS4oOVPOOrDcKL25jlcEK-Q_ZMkXNFSkNTjEYQ4ihcUG5upv0u-HuXjwtlpzPw
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="zari.jpg"
+
+< C:\Users\HP\Desktop\test\Images\zari.jpg
+
+### Open file
+GET localhost:8080/api/v1/attach/open/ba765b2b-53eb-410f-a92c-ca451681bae1.jpg

@@ -1,0 +1,21 @@
+### Eskiz login
+POST https://notify.eskiz.uz/api/auth/login
+Content-Type: application/json
+Accept-Language: UZ
+
+{
+  "email":"Stevensoliyev@gmail.com",
+  "password": "l2987kbqjvj5lpOyFhVPGCmQ9ODPs3pefnvMhidF"
+}
+
+### Eskiz sms send
+POST https://notify.eskiz.uz/api/message/sms/send
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDU1NTM2NDIsImlhdCI6MTc0Mjk2MTY0Miwicm9sZSI6InRlc3QiLCJzaWduIjoiYjAyYzk0NmFmMWNjODE3ODgxMmNiMzY4NzI5OWNkZDAxZTAyMTU3ODFjNzUzNTNhY2YyMTNhMjVmZTFiZjkzMyIsInN1YiI6IjEwMzg1In0.EO8wwOFc5CxEWMR4x7HD7tHk9Xtf5bXLa3VXUOib6PI
+Accept-Language: UZ
+
+{
+  "mobile_phone": 998942702363,
+  "message": "Bu Eskiz dan test",
+  "from": 4546
+}

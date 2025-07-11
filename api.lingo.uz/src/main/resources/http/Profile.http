@@ -1,0 +1,77 @@
+### Update profile name
+PUT localhost:8080/api/v1/profile/detail
+Content-Type: application/json
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIxOGM2MjJhOC04ZTJjLTQ1MmUtYWJjOS1hYjk2MDUxZTVlNzQiLCJzdWIiOiI5OTg5NDI3MDIzNjMiLCJpYXQiOjE3NDMxMzk5NjksImV4cCI6MTc0MzIyNjM2OX0.Bei705siV_WIdS0DEaigNJNJvDZrUOaeBiBENnaQa3A3_515cbIrmEGazWsajjuAEZftZaFsfyTX7taAxX-YvQ
+
+{
+  "name": "Raffazum"
+}
+
+### Update profile password
+PUT localhost:8080/api/v1/profile/password
+Content-Type: application/json
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiJkZTAwNzgyZi05YzM3LTRiMWMtOTIxZS1iZjI1YTEyOWEyNDciLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzQzNTE5MzI1LCJleHAiOjE3NDM2MDU3MjV9.cIMyVdJI5sdTuXZo8l8ys37AzkgaN-bGs1OLFuKA0ATeKr8CA552-QTtOFmk3zfGTWyYSfxNLDav8R6zqe0ecA
+
+{
+  "currentPassword": "12345",
+  "newPassword": "777"
+}
+
+### Update profile username
+PUT localhost:8080/api/v1/profile/username
+Content-Type: application/json
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIxOGM2MjJhOC04ZTJjLTQ1MmUtYWJjOS1hYjk2MDUxZTVlNzQiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzQ0MDA0NTE0LCJleHAiOjE3NDQwOTA5MTR9.aOnnwlT_ug5jf-3xtaVI36UBSxlvI1dpsJGnrx_aGpvwAMdfzzbSeYNwwMmSGay9ZDwS6nzKAjvm0ps2GhnkoQ
+
+{
+  "username": "ortiqovmuzaffar173@gmail.com"
+}
+
+### Update profile username confirm
+PUT localhost:8080/api/v1/profile/username-confirmation
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIxOGM2MjJhOC04ZTJjLTQ1MmUtYWJjOS1hYjk2MDUxZTVlNzQiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzQ0MDA0NTE0LCJleHAiOjE3NDQwOTA5MTR9.aOnnwlT_ug5jf-3xtaVI36UBSxlvI1dpsJGnrx_aGpvwAMdfzzbSeYNwwMmSGay9ZDwS6nzKAjvm0ps2GhnkoQ
+
+{
+  "code": "45071"
+}
+
+### Update profile photo
+PUT localhost:8080/api/v1/profile/photo
+Content-Type: application/json
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTixST0xFX1VTRVIiLCJpZCI6ImJhNzY1YjJiLTUzZWItNDEwZi1hOTJjLWNhNDUxNjgxYmFlMSIsInN1YiI6Im11emFmZmFybWlrZTJAZ21haWwuY29tIiwiaWF0IjoxNzQ2MTY2MTAwLCJleHAiOjE3NDY3NzA5MDB9.VPeJBun5hvc2fSTa-69kT3C-pQ0QQkeD_iqx3c84fo8qxS7JAWuF2lr-3HMl89ztJul6dHo4-GZMnMXWKKWTSA
+
+{
+  "photoId": "b3e689b0-632a-4537-808f-b9246034529c.jpg"
+}
+
+### GET PROFILE LIST FILTER
+POST localhost:8080/api/v1/profile/filter
+Content-Type: application/json
+Accept-Language: UZ
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjoiMWEyYjNjNGQtMDAwMS00ZTZmLThjMmYtMTExMTExMTExMTExIiwic3ViIjoib3J0aXFvdm11emFmZmFyMTcxQGdtYWlsLmNvbSIsImlhdCI6MTc0Njk2Mjc5MSwiZXhwIjoxNzQ3NTY3NTkxfQ.Ts1o1rpIA7yA41P7mQXcTMwZsThrOv0mPtH2TDbj67FsxQ73Dys9FgHsodeOGgdM4qMi5aVJFJWhaOYgSQRv7Q
+
+{
+  "query": "Muza"
+}
+
+### CHANGE PROFILE STATUS
+PUT localhost:8080/api/v1/profile/status/1a2b3c4d-0002-4e6f-8c2f-222222222222
+Content-Type: application/json
+Accept-Language: RU
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjoiMWEyYjNjNGQtMDAwMS00ZTZmLThjMmYtMTExMTExMTExMTExIiwic3ViIjoib3J0aXFvdm11emFmZmFyMTcxQGdtYWlsLmNvbSIsImlhdCI6MTc0NjMzODU5MCwiZXhwIjoxNzQ2OTQzMzkwfQ.vPCLsQHcdF8A4XtJQE1xbpDZgsG-DyvrVuGvCL3wCpXprAyEYBg8kOKNDJcfNDGFVTWQopH-Oewep78SzXA3Bw
+
+{
+  "status": "BLOCKED"
+}
+
+### DELETE PROFILE
+DELETE localhost:8080/api/v1/profile/1a2b3c4d-0002-4e6f-8c2f-222222222222
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjoiMWEyYjNjNGQtMDAwMS00ZTZmLThjMmYtMTExMTExMTExMTExIiwic3ViIjoib3J0aXFvdm11emFmZmFyMTcxQGdtYWlsLmNvbSIsImlhdCI6MTc0NjMzODU5MCwiZXhwIjoxNzQ2OTQzMzkwfQ.vPCLsQHcdF8A4XtJQE1xbpDZgsG-DyvrVuGvCL3wCpXprAyEYBg8kOKNDJcfNDGFVTWQopH-Oewep78SzXA3Bw
+

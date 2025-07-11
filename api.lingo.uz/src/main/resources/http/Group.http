@@ -1,0 +1,27 @@
+### REGISTR A USER
+POST localhost:8080/api/v1/group
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMDU0OTY1LCJleHAiOjE3NTI2NTk3NjV9.8lPErUu50AsiiPhHbt9MVTYqwhcMdV43AHDeUWMUy6pM3Ocz8p-zfJ6VU-XM9eaIfUZBysWg_gykg_oxLQCMIw
+
+{
+  "name": "Mazgiii",
+  "photoId": "989a17cd-87e1-4f8c-a431-2ffed5d9a5d1.jpg"
+}
+
+### UPDATE A USER
+PUT localhost:8080/api/v1/group/73c8335a-be85-486f-8ee2-d62f61d87a01
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMDU0OTY1LCJleHAiOjE3NTI2NTk3NjV9.8lPErUu50AsiiPhHbt9MVTYqwhcMdV43AHDeUWMUy6pM3Ocz8p-zfJ6VU-XM9eaIfUZBysWg_gykg_oxLQCMIw
+
+{
+  "name": "Mazgi 2",
+  "photoId": "989a17cd-87e1-4f8c-a431-2ffed5d9a5d1.jpg"
+}
+
+### UPDATE A USER
+DELETE localhost:8080/api/v1/group/73c8335a-be85-486f-8ee2-d62f61d87a01
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMDU0OTY1LCJleHAiOjE3NTI2NTk3NjV9.8lPErUu50AsiiPhHbt9MVTYqwhcMdV43AHDeUWMUy6pM3Ocz8p-zfJ6VU-XM9eaIfUZBysWg_gykg_oxLQCMIw

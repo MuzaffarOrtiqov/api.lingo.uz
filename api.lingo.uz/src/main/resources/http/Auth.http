@@ -1,0 +1,69 @@
+### REGISTR A USER
+POST localhost:8080/api/v1/auth/registration
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "name": "Muzaffar",
+  "username": "998942702363",
+  "password": "123456"
+}
+
+### Registration Email  Verification
+GET localhost:8080/api/v1/auth/registration/email-verification/eyJhbGcOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiJjY2QyN2IzZS1kYjJmLTQ5YzQtOGE0ZS0wZjZiYjdjNjA0MjQiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzQxNzU1MTM1LCJleHAiOjE3NDE4NDE1MzV9.nT1jaoX5ZIFLBhcb22YHhn8oT8LSz-XKqkKAYEBBr5jJi4NnLN2xXRmp2fuezU8NK1Qfc5-WrtjXGmFL3asi3A?lang=RU
+
+
+### Registration Sms Verification
+POST localhost:8080/api/v1/auth/registration/sms-verification
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "phone": "+998942702363",
+  "code": "47542"
+
+}
+
+### Registration Sms Verification Resend
+POST localhost:8080/api/v1/auth/registration/sms-verification-resend
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "phone": "+998942702363"
+
+}
+
+
+### LOGIN
+POST localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "muzaffarmike2@gmail.com",
+  "password": "12345"
+}
+
+### Password Reset
+POST localhost:8080/api/v1/auth/password-reset
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "username": "ortiqovmuzaffar171@gmail.com"
+}
+
+### Reset Password Verification
+POST localhost:8080/api/v1/auth/password-reset-confirm
+Content-Type: application/json
+Accept-Language: EN
+
+{
+  "username": "ortiqovmuzaffar171@gmail.com",
+  "confirmCode": "33846",
+  "password": "12345"
+}
+
+
+
+

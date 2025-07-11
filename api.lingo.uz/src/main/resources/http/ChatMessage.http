@@ -1,0 +1,29 @@
+### CREATE A NEW CHAT
+POST localhost:8080/api/v1/chat-message
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMDU0OTY1LCJleHAiOjE3NTI2NTk3NjV9.8lPErUu50AsiiPhHbt9MVTYqwhcMdV43AHDeUWMUy6pM3Ocz8p-zfJ6VU-XM9eaIfUZBysWg_gykg_oxLQCMIw
+
+{
+  "content": "Nima gap?",
+  "chatType": "USER",
+  "receiverId": "ba765b2b-53eb-410f-a92c-ca451681bae1",
+  "chatMessageType": "TEXT"
+}
+
+### UPDATE  A CHAT
+PUT localhost:8080/api/v1/chat-message/21da96c6-2748-4e96-80d7-c32c572c9c90
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMDU0OTY1LCJleHAiOjE3NTI2NTk3NjV9.8lPErUu50AsiiPhHbt9MVTYqwhcMdV43AHDeUWMUy6pM3Ocz8p-zfJ6VU-XM9eaIfUZBysWg_gykg_oxLQCMIw
+
+{
+  "content": "Nima gaaaap?",
+  "chatType": "USER"
+}
+
+### DELETE  A CHAT
+DELETE localhost:8080/api/v1/chat-message/21da96c6-2748-4e96-80d7-c32c572c9c90
+Content-Type: application/json
+Accept-Language: EN
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOiIzNWM3YThmYy01ZTJiLTQ1ZDktYmI5Zi0yZjJhMGNkMzgzYjgiLCJzdWIiOiJvcnRpcW92bXV6YWZmYXIxNzFAZ21haWwuY29tIiwiaWF0IjoxNzUyMDU0OTY1LCJleHAiOjE3NTI2NTk3NjV9.8lPErUu50AsiiPhHbt9MVTYqwhcMdV43AHDeUWMUy6pM3Ocz8p-zfJ6VU-XM9eaIfUZBysWg_gykg_oxLQCMIw
